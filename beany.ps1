@@ -2,6 +2,7 @@ Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
 
 Start-Process "Narrator.exe"
+$xpError = New-Object System.Media.SoundPlayer ""
 
 # ============================================================
 # BEAN CHAOS CONFIGURATION
