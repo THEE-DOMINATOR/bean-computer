@@ -2,7 +2,7 @@ Add-Type -AssemblyName System.Windows.Forms
 Add-Type -AssemblyName System.Drawing
 
 Start-Process "Narrator.exe"
-$xpError = New-Object System.Media.SoundPlayer ""
+$xpError = New-Object System.Media.SoundPlayer "https://github.com/THEE-DOMINATOR/bean-computer/raw/refs/heads/main/Windows%20XP%20Critical%20Stop.wav"
 
 # ============================================================
 # BEAN CHAOS CONFIGURATION
@@ -410,6 +410,7 @@ $chaosTimer.Add_Tick({
 
         Show-BeanPopup
         Start-Process calc
+        $xpError.Play()
 
         # Starts slower, becomes increasingly ridiculous.
         $delay = Get-Random `
